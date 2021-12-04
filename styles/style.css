@@ -1,5 +1,6 @@
 /*Colors*/
 /*Maps*/
+/* Fuentes usadas */
 html {
   font-family: "Bangers", cursive !important; }
 
@@ -12,6 +13,7 @@ div {
 p {
   font-family: Arial, Helvetica, sans-serif; }
 
+/* Color de fuente */
 h1 {
   color: #ff0000; }
 
@@ -21,6 +23,7 @@ p {
 a {
   color: #0000ff; }
 
+/* Menu de pagina */
 .logoMarca {
   margin-bottom: auto;
   margin-top: auto; }
@@ -43,6 +46,7 @@ header nav ul {
     text-transform: uppercase;
     color: #ecf1fe; }
 
+/* Botones de informacion */
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
@@ -65,6 +69,7 @@ header nav ul {
 #seccionUno {
   background-image: linear-gradient(to top, #5f0303, black); }
 
+/* Seccion dos de la pagina principal */
 .center {
   display: block;
   margin-left: auto;
@@ -73,13 +78,18 @@ header nav ul {
 
 .segundoParrafo {
   background-color: #ecf1fe;
-  border-style: dashed;
-  border-color: #440909;
-  border-width: 3px;
+  text-align: center;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-style: groove;
+  border-color: #3a5795;
+  border-width: 5px;
   overflow: auto;
+  margin-top: 1%;
   margin-left: 20%;
   margin-right: 20%; }
 
+/* Pagina About */
 .about {
   height: 1000px;
   display: flex;
@@ -119,6 +129,7 @@ header nav ul {
     background-color: darkorange;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
+/* Pagina Store */
 .tienda {
   height: 700px;
   display: flex;
@@ -186,6 +197,7 @@ table {
   padding: 1%;
   text-align: center; }
 
+/* Pagina News */
 main {
   display: grid;
   grid-template-areas: "grid1 grid1 aside" "grid3 grid4 aside" "grid3 grid4 grid2";
@@ -239,6 +251,7 @@ main {
     background-color: lightblue;
     grid-area: aside; }
 
+/* Pagina Contact */
 #seccionFormulario {
   display: block;
   background-color: #ecf1fe;

@@ -1,5 +1,7 @@
 @import "../scss/variables/variables";
 
+/* Fuentes usadas */
+
 html {
   font-family: "Bangers", cursive !important;
 }
@@ -16,6 +18,8 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Color de fuente */
+
 h1 {
   color: $color-red;
 }
@@ -25,6 +29,8 @@ p {
 a {
   color: $color-blue;
 }
+
+/* Menu de pagina */
 
 .logoMarca {
   margin-bottom: auto;
@@ -52,6 +58,8 @@ header nav ul {
   }
 }
 
+/* Botones de informacion */
+
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:active,
@@ -77,6 +85,8 @@ header nav ul {
   background-image: linear-gradient(to top, rgb(95, 3, 3), black);
 }
 
+/* Seccion dos de la pagina principal */
+
 .center {
   display: block;
   margin-left: auto;
@@ -86,13 +96,20 @@ header nav ul {
 
 .segundoParrafo {
   background-color: #ecf1fe;
-  border-style: dashed;
-  border-color: #440909;
-  border-width: 3px;
+  text-align: center;
+  font-size: large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-style: groove;
+  border-color: #3a5795;
+  border-width: 5px;
   overflow: auto;
+  margin-top: 1%;
   margin-left: 20%;
   margin-right: 20%;
 }
+
+/* Pagina About */
 
 .about {
   height: 1000px;
@@ -139,6 +156,8 @@ header nav ul {
       0 17px 50px 0 rgba(0, 0, 0, 0.19);
   }
 }
+
+/* Pagina Store */
 
 .tienda {
   height: 700px;
@@ -219,6 +238,8 @@ table {
   text-align: center;
 }
 
+/* Pagina News */
+
 main {
   display: grid;
   grid-template-areas:
@@ -290,6 +311,8 @@ main {
     grid-area: aside;
   }
 }
+
+/* Pagina Contact */
 
 #seccionFormulario {
   display: block;
