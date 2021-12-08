@@ -18,7 +18,7 @@ h1 {
   color: #ff0000; }
 
 p {
-  color: #860441; }
+  color: #070003; }
 
 a {
   color: #0000ff; }
@@ -131,7 +131,7 @@ header nav ul {
 
 /* Pagina Store */
 .tienda {
-  height: 700px;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -198,58 +198,51 @@ table {
   text-align: center; }
 
 /* Pagina News */
-main {
+header[role="banner"] {
+  grid-area: header; }
+
+main[role="main"] {
+  grid-area: main; }
+
+aside[role="complementary"] {
+  grid-area: aside; }
+
+.grid,
+.subgrid {
   display: grid;
-  grid-template-areas: "grid1 grid1 aside" "grid3 grid4 aside" "grid3 grid4 grid2";
-  grid-template-columns: 5fr 4fr 3fr;
-  grid-template-rows: 100px 500px 200px;
-  column-gap: 10px;
-  row-gap: 10px; }
-  main .grid1 {
-    color: #440909;
-    background-color: #ecf1fe;
-    grid-area: grid1; }
-    main .grid1 h2 {
-      color: #06080c;
-      margin-left: 15%; }
-    main .grid1 p {
-      text-align: center; }
-  main .grid2 {
-    background-color: cornflowerblue;
-    grid-area: grid2; }
-    main .grid2 h2 {
-      text-align: right;
-      margin-right: 10%; }
-    main .grid2 p {
-      text-align: center;
-      font-size: 250%; }
-  main .grid3 {
-    background-color: darkcyan;
-    grid-area: grid3; }
-    main .grid3 h2 {
-      text-align: center; }
-    main .grid3 p {
-      color: #ecf1fe;
-      text-align: justify;
-      padding: 15px; }
-    main .grid3 img {
-      align-self: auto; }
-  main .grid4 {
-    background-color: darkcyan;
-    grid-area: grid4; }
-    main .grid4 h2 {
-      text-align: center; }
-    main .grid4 p {
-      color: #ecf1fe;
-      text-align: justify;
-      padding: 15px; }
-    main .grid4 img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; }
-  main .aside {
-    background-color: lightblue;
-    grid-area: aside; }
+  grid-template-columns: minmax(0, 1fr); }
+
+.grid {
+  grid-template-areas: "header" "main" "aside";
+  width: 100%; }
+
+.subgrid {
+  width: calc(100% + 2rem);
+  margin: 0 -1rem; }
+
+.grid-item,
+.subgrid-item {
+  padding: 1rem;
+  background-color: lightcyan; }
+  .grid-item img,
+  .subgrid-item img {
+    display: block;
+    height: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; }
+
+@media all and (min-width: 576px) {
+  .subgrid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    margin-bottom: 1rem; }
+  .subgrid-item {
+    padding-bottom: 0.25rem; } }
+
+@media all and (min-width: 992px) {
+  .grid {
+    grid-template-areas: "header header header" "main main aside";
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr); } }
 
 /* Pagina Contact */
 #seccionFormulario {
@@ -327,8 +320,8 @@ nav ul {
   text-align: center;
   padding: 2rem;
   margin: 0.5rem;
-  margin-left: 40%;
-  margin-right: 40%; }
+  margin-left: 35%;
+  margin-right: 35%; }
 
 .dos {
   background-color: #800011;
@@ -336,8 +329,8 @@ nav ul {
   text-align: center;
   padding: 2rem;
   margin: 0.5rem;
-  margin-left: 40%;
-  margin-right: 40%; }
+  margin-left: 35%;
+  margin-right: 35%; }
 
 @media only screen and (max-width: 320px) {
   body {
@@ -345,7 +338,7 @@ nav ul {
 
 @media only screen and (max-width: 767px) and (min-width: 321px) {
   body {
-    background-color: dodgerblue; } }
+    background-color: darkgrey; } }
 
 @media only screen and (min-width: 768px) {
   body {
