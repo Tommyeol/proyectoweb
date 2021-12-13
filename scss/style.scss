@@ -112,29 +112,33 @@ header nav ul {
 /* Pagina About */
 
 .about {
-  height: 1000px;
+  height: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-content: space-between;
+  align-content: space-around;
   justify-content: left;
-  margin-left: 20%;
+  margin-left: auto;
   .box {
-    width: 500px;
+    width: 200px;
     height: 200px;
   }
   .articuloAbout {
+    width: auto;
+    height: auto;
     background-color: #ecf1fe;
-    margin: 5%;
+    margin: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 1%;
     text-align: center;
   }
   .fotos {
-    margin-left: 40%;
-    margin-top: -21%;
+    display: block;
+    margin-left: 30%;
     margin-right: 30%;
-    width: -50%;
-    height: 50%;
+    width: auto;
+    height: auto;
   }
   .boton {
     border: none;
@@ -302,25 +306,31 @@ aside[role="complementary"] {
 }
 
 /* Pagina Contact */
-
-#seccionFormulario {
+.contacto {
   display: block;
-  background-color: #ecf1fe;
-  text-align: center;
-  align-items: center;
-  padding: 2%;
-  margin-right: 70%;
-  margin-left: 10%;
-  margin-top: 5%;
-  .titulo:hover {
-    color: cadetblue;
-    text-transform: capitalize;
-    text-decoration: underline;
-  }
-  div:hover {
-    color: #440909;
-    text-decoration: underline;
-  }
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 80%;
+  margin-left: 3px;
+}
+
+.help-block.with-errors {
+  color: #ff5050;
+  margin-top: 5px;
+}
+
+.card {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @mixin reset-list {
@@ -384,12 +394,6 @@ nav ul {
 }
 .youtube {
   background-color: brown;
-}
-
-.contacto {
-  display: block;
-  margin-left: 150%;
-  margin-top: -100%;
 }
 
 .card-body {
