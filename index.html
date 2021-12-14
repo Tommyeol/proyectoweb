@@ -18,17 +18,35 @@
 
 <body>
   <header>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="./index.html">
+            <li>Home</li>
+          </a>
+          <a href="./sections/store.html">
+            <li>Store</li>
+          </a>
+          <a href="./sections/news.html">
+            <li>News</li>
+          </a>
+          <a href="./sections/about.html">
+            <li>About</li>
+          </a>
+          <a href="./sections/contact.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
     <nav>
       <div class="logoMarca">
         <img src="./media/Logo.png" alt="logo de marca">
       </div>
-      <ul class="listaPrueba">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./sections/store.html">Store</a></li>
-        <li><a href="./sections/news.html">News</a></li>
-        <li><a href="./sections/about.html">About</a></li>
-        <li><a href="./sections/contact.html">Contact</a></li>
-      </ul>
     </nav>
   </header>
   <section id="seccionUno">
@@ -66,7 +84,7 @@
       </div>
     </div>
     <p>
-      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+      <a class="btn btn-primary text-center" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
         aria-expanded="false" aria-controls="multiCollapseExample1">Leading Tech e-Retailer</a>
       <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
         aria-expanded="false" aria-controls="multiCollapseExample2">Reliable Experience</button>
