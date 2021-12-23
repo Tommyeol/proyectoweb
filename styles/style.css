@@ -231,6 +231,11 @@ a {
   align-content: space-between;
   justify-content: center; }
 
+.versusGrafica img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 table {
   color: brown;
   background-color: #ecf1fe;
@@ -397,32 +402,17 @@ aside[role="complementary"] {
 .card-body {
   background-color: #ecf1fe; }
 
-.uno {
-  background-color: #76b900;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  margin: 0.5rem;
-  margin-left: 35%;
-  margin-right: 35%; }
-
-.dos {
-  background-color: #800011;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  margin: 0.5rem;
-  margin-left: 35%;
-  margin-right: 35%; }
-
 @media only screen and (max-width: 320px) {
   body {
-    background-color: goldenrod; } }
+    background-color: goldenrod;
+    overflow-x: hidden; } }
 
 @media only screen and (max-width: 767px) and (min-width: 321px) {
   body {
-    background-color: darkgrey; } }
+    background-color: darkgrey;
+    overflow-x: hidden; } }
 
 @media only screen and (min-width: 768px) {
   body {
-    background-color: white; } }
+    background-color: white;
+    overflow-x: hidden; } }
